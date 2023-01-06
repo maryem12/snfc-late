@@ -15,7 +15,7 @@ jobs:
       run: docker build . --file Dockerfile --tag sncf-on-time:$GITHUB_SHA
 
     - name: Tag the Docker image
-      run: docker tag sncf-on-time:$GITHUB_SHA europe-docker.pkg.dev/ensai-2023-373710/mariem/snfc-late$GITHUB_SHA
+      run: docker tag snfc-late:$GITHUB_SHA europe-central2-docker.pkg.dev/ensai-2023-373710/mariem/snfc-late$GITHUB_SHA
 
     - name: Auth on GCP
       uses: docker/login-action@v2
