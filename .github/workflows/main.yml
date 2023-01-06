@@ -25,4 +25,4 @@ jobs:
         password: ${{ secrets.GOOGLE_CREDENTIALS }}
 
     - name: Push the Docker tagged image
-      run: docker push europe-central2-docker.pkg.dev/ensai-2023-373710/mariem/snfc-late:$GITHUB_SHAope
+      run: docker push europe-central2-docker.pkg.dev/ensai-2023-373710/mariem/snfc-late:$GITHUB_SHA
